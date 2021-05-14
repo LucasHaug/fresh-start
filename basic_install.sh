@@ -31,3 +31,6 @@ fish -c 'omf install bass -y'
 
 printf "set -x LS_COLORS $LS_COLORS ':ow=01;35'\r\n\n" >> ~/.config/fish/config.fish
 printf "set -l USER_PROGRAMS_FOLDER /home/lhaug/room/UserPrograms\r\n\n" >> ~/.config/fish/config.fish
+
+# Config local time
+timedatectl set-local-rtc 1 --adjust-system-clock

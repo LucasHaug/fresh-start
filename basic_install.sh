@@ -1,8 +1,16 @@
 #!/usr/bin/env bash
 
+#####################################
+## Configure the following variables
+#####################################
+
 GITHUB_USER="user"
 GITHUB_EMAIL="email@email.com"
 USER_PROGRAMS_FOLDER="$HOME/room/UserPrograms"
+
+#####################################
+## Configuration end
+#####################################
 
 # Update amd upgrade before starting
 sudo apt update

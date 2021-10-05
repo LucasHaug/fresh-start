@@ -1,6 +1,14 @@
 #!/usr/bin/env bash
 
+#####################################
+## Configure the following variables
+#####################################
+
 GITHUB_EMAIL="email@email.com"
+
+#####################################
+## Configuration end
+#####################################
 
 # Generate new key
 ssh-keygen -t ed25519 -C "$GITHUB_EMAIL"

@@ -2,6 +2,7 @@
 
 GITHUB_USER="user"
 GITHUB_EMAIL="email@email.com"
+USER_PROGRAMS_FOLDER="$HOME/room/UserPrograms"
 
 # Update amd upgrade before starting
 sudo apt update
@@ -30,7 +31,7 @@ yes | curl -L https://get.oh-my.fish | fish
 fish -c 'omf install bass -y'
 
 printf "set -x LS_COLORS $LS_COLORS ':ow=01;35'\r\n\n" >> ~/.config/fish/config.fish
-printf "set -l USER_PROGRAMS_FOLDER /home/lhaug/room/UserPrograms\r\n\n" >> ~/.config/fish/config.fish
+printf "set -l USER_PROGRAMS_FOLDER $USER_PROGRAMS_FOLDER\r\n\n" >> ~/.config/fish/config.fish
 
 # Config local time
 timedatectl set-local-rtc 1 --adjust-system-clock

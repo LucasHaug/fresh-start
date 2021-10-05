@@ -24,4 +24,4 @@ sudo ./SetupSTM32CubeMX*
 
 printf "set -x CUBE_PATH \$USER_PROGRAMS_FOLDER/STM32CubeMX\r\n\n" >> ~/.config/fish/config.fish
 
-printf "alias cube='/home/lhaug/room/UserPrograms/STM32CubeMX/STM32CubeMX'\r\n\n" >> ~/.config/fish/config.fish
+printf "alias cube='$USER_PROGRAMS_FOLDER/STM32CubeMX/STM32CubeMX'\r\n\n" >> ~/.config/fish/config.fish

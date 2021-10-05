@@ -12,6 +12,9 @@ sudo apt update
 
 sudo apt install ros-noetic-desktop-full -y
 
+# Catkin tools installation
+sudo pip3 install -U catkin_tools
+
 # Setup
 printf "bass source /opt/ros/noetic/setup.bash\n\n" >> ~/.config/fish/config.fish
 

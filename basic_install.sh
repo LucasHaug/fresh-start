@@ -38,7 +38,7 @@ yes | curl -L https://get.oh-my.fish | fish
 
 fish -c 'omf install bass -y'
 
-printf "set -x LS_COLORS $LS_COLORS ':ow=01;35'\r\n\n" >> ~/.config/fish/config.fish
+printf "set -x LS_COLORS \$LS_COLORS ':ow=01;35'\r\n\n" >> ~/.config/fish/config.fish
 printf "set -l USER_PROGRAMS_FOLDER $USER_PROGRAMS_FOLDER\r\n\n" >> ~/.config/fish/config.fish
 
 # Config local time

@@ -11,21 +11,9 @@ sudo apt install alacritty -y
 mkdir -p ~/.config/alacritty/
 cp "$WORKING_DIR"/.config/alacritty/alacritty.yml ~/.config/alacritty/
 
-# Download theme
-wget https://github.com/dracula/alacritty/archive/master.zip
-
-unzip master.zip -d Dracula
-
-cd Dracula
-mv alacritty-master/* .
-rm -rf alacritty-master
-
-cd ..
-
-rm master.zip
-
+# Apply theme
 mkdir -p ~/.config/alacritty/themes/
-mv Dracula ~/.config/alacritty/themes/
+cp "$WORKING_DIR"/.config/alacritty/themes/dracula.yml ~/.config/alacritty/themes/
 
 # Update default terminal
 sudo update-alternatives --config x-terminal-emulator

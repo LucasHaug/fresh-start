@@ -2,29 +2,18 @@
 
 WORKING_DIR=$(pwd)
 
-# Install fonts
-sudo apt install fonts-firacode -y
-sudo apt install fonts-powerline -y
+# Install alacritty
+sudo add-apt-repository ppa:mmstick76/alacritty
+sudo apt update
+sudo apt install alacritty -y
 
-# Install tilda and config
-sudo apt install tilda -y
-cp "$WORKING_DIR"/.config/tilda/config_0 ~/.config/tilda/config_0
-cp "$WORKING_DIR"/.config/autostart/tilda.desktop ~/.config/autostart/tilda.desktop
+# Get config
+mkdir -p ~/.config/alacritty/
+cp "$WORKING_DIR"/.config/alacritty/alacritty.yml ~/.config/alacritty/
 
-# Install tmux and config
-sudo apt install tmux -y
+# Apply theme
+mkdir -p ~/.config/alacritty/themes/
+cp "$WORKING_DIR"/.config/alacritty/themes/dracula.yml ~/.config/alacritty/themes/
 
-cd
-git clone https://github.com/gpakosz/.tmux.git
-
-cp "$WORKING_DIR"/.config/tmux/.tmux.conf ~/.tmux/
-cp "$WORKING_DIR"/.config/tmux/.tmux.conf.local ~/.tmux/
-
-ln -s -f .tmux/.tmux.conf
-cp .tmux/.tmux.conf.local .
-
-tmux source-file ~/.tmux.conf
-
-printf "if status is-interactive; and not set -q TMUX\r\n    exec tmux\r\nend\r\n\n" >> ~/.config/fish/config.fish
-
-
+# Update default terminal
+sudo update-alternatives --config x-terminal-emulator

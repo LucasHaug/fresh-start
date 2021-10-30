@@ -7,3 +7,5 @@ This setup also uses the following gnome extensions:
 - [User Theme](https://extensions.gnome.org/extension/19/user-themes/)
 - [Hide Top Bar](https://extensions.gnome.org/extension/545/hide-top-bar/)
 - [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/)
+
+To configure Spotify, it is used the [spicetify](https://github.com/khanhas/spicetify-cli) and the [Sleek + Cherry](https://github.com/morpheusthewhite/spicetify-themes/tree/master/Sleek) theme.

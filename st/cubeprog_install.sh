@@ -26,6 +26,8 @@ cd $USER_PROGRAMS_FOLDER/STM32CubeProgrammer/Drivers/rules
 
 sudo cp *.rules /etc/udev/rules.d
 
+sudo udevadm trigger
+
 # Set enviroment varibles
 printf "set -x STM32_CUBE_PROGRAMMER \$USER_PROGRAMS_FOLDER/STM32CubeProgrammer/bin\r\n\n" >> ~/.config/fish/config.fish
 printf "set -x  PATH \$PATH \$STM32_CUBE_PROGRAMMER\r\n\n" >> ~/.config/fish/config.fish

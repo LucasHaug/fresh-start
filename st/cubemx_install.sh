@@ -9,10 +9,6 @@ DOWNLOADS_DIR=$(pwd)/st/Downloads
 
 # ===== Install CubeMX =====
 
-sudo apt install openjdk-8-jre-headless
-
-sudo update-alternatives --config java
-
 unzip $DOWNLOADS_DIR/en.stm32cubemx* -d $DOWNLOADS_DIR/cubemx
 
 cd $DOWNLOADS_DIR/cubemx

@@ -9,10 +9,6 @@ DOWNLOADS_DIR=$(pwd)/st/Downloads
 
 # ===== Install CubeProg =====
 
-sudo apt install openjdk-8-jre-headless
-
-sudo update-alternatives --config java
-
 unzip $DOWNLOADS_DIR/en.stm32cubeprg* -d $DOWNLOADS_DIR/cubeprog
 
 cd $DOWNLOADS_DIR/cubeprog

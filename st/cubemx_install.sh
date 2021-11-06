@@ -15,7 +15,7 @@ cd $DOWNLOADS_DIR/cubemx
 
 chmod +x SetupSTM32CubeMX*
 
-# In the Installation Wizard, use the following installation path: /home/lhaug/room/UserPrograms/STM32CubeMX
+# In the Installation Wizard, use the following installation path: $USER_PROGRAMS_FOLDER/STM32CubeMX
 sudo ./SetupSTM32CubeMX*
 
 printf "set -x CUBE_PATH \$USER_PROGRAMS_FOLDER/STM32CubeMX\r\n\n" >> ~/.config/fish/config.fish

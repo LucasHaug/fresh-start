@@ -15,7 +15,7 @@ cd $DOWNLOADS_DIR/cubeprog
 
 chmod +x SetupSTM32CubeProgrammer*.linux
 
-# In the Installation Wizard, use the following installation path: /home/lhaug/room/UserPrograms/STM32CubeProgrammer
+# In the Installation Wizard, use the following installation path: $USER_PROGRAMS_FOLDER/STM32CubeProgrammer
 sudo ./SetupSTM32CubeProgrammer*.linux
 
 # Needed when using the CubeProgrammer

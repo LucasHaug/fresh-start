@@ -13,6 +13,8 @@ unzip $DOWNLOADS_DIR/en.STM32CubeMon* -d $DOWNLOADS_DIR/cubemonitor
 
 cd $DOWNLOADS_DIR/cubemonitor
 
+sudo apt install libncurses5
+
 # ===== Install STM32CubeMonitor =====
 
 sudo dpkg -i stm32cubemonitor*.deb

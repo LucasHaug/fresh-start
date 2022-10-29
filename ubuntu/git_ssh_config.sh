@@ -11,12 +11,14 @@ GITHUB_EMAIL="email@email.com"
 #####################################
 
 # Generate new key
+echo "[WARNING] Generate new key with name github"
+
 ssh-keygen -t ed25519 -C "$GITHUB_EMAIL"
 
 # Add key to ssh-agent
 eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/id_ed25519
+ssh-add ~/.ssh/github
 
 # Copy key
 sudo apt install xclip -y
-xclip -selection clipboard < ~/.ssh/id_ed25519.pub
+xclip -selection clipboard < ~/.ssh/github.pub

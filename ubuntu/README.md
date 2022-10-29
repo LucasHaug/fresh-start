@@ -1,4 +1,4 @@
-# fresh-start
+# Ubuntu like configuration
 
 Scripts and config files for when to reinstall ubuntu
 

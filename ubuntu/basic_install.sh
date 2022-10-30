@@ -41,6 +41,7 @@ sudo apt install fish -y
 chsh -s $(which fish)
 
 # Set initial config
+mkdir -p ~/.config/fish
 touch ~/.config/fish/config.fish
 printf "set -l USER_PROGRAMS_FOLDER $USER_PROGRAMS_FOLDER\r\n\n" >> ~/.config/fish/config.fish
 

@@ -19,6 +19,8 @@ sudo apt update
 sudo apt upgrade -y
 
 # Install basic tools
+sudo add-apt-repository ppa:git-core/ppa
+
 sudo apt install build-essential git python3 python3-pip -y
 
 # Config git

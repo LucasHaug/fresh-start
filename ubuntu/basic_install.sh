@@ -28,8 +28,7 @@ git config --global user.name "$GITHUB_USER"
 git config --global user.email "$GITHUB_EMAIL"
 
 # install fonts
-sudo apt install fonts-firacode -y
-sudo apt install fonts-powerline -y
+sudo apt install fonts-firacode fonts-powerline -y
 
 # Config file explorer
 cp "$WORKING_DIR"/.config/user-dirs.dirs ~/.config/user-dirs.dirs
@@ -40,9 +39,12 @@ sudo apt install fish -y
 chsh -s $(which fish)
 
 # Set initial config
+touch ~/.config/fish/config.fish
 printf "set -l USER_PROGRAMS_FOLDER $USER_PROGRAMS_FOLDER\r\n\n" >> ~/.config/fish/config.fish
 
 # Install theme
+sudo apt install curl
+
 sudo sh -c "$(curl -fsSL https://starship.rs/install.sh)"
 
 cp "$WORKING_DIR"/.config/starship.toml ~/.config/

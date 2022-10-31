@@ -16,14 +16,11 @@ make depcheck
 make compile
 make install
 make configure
-make enable
 
-cd ..
-rm -rf shell
+printf "\n\n\n[WARNING] Restart your computer or log out to finish to install pop shell, run 'make enable' and erase shell folder"
 
 # Install the remaining extensions
 EXTENSIONS=(
-  "Pop Shell","https://github.com/pop-os/shell"
   "Blur my Shell","https://extensions.gnome.org/extension/3193/blur-my-shell/"
   "Clipboard History","https://extensions.gnome.org/extension/4839/clipboard-history/"
   "Freon","https://extensions.gnome.org/extension/841/freon/"

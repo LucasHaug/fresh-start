@@ -6,7 +6,6 @@ This setup also uses the following gnome extensions:
 - [Pop Shell](https://github.com/pop-os/shell)
 - [Blur my Shell](https://extensions.gnome.org/extension/3193/blur-my-shell/)
 - [Clipboard History](https://extensions.gnome.org/extension/4839/clipboard-history/)
-- [Freon](https://extensions.gnome.org/extension/841/freon/)
 - [Vitals](https://extensions.gnome.org/extension/1460/vitals/)
 
 The wallpaper and user image where obtained in the [nordic-wallpapers](https://github.com/linuxdotexe/nordic-wallpapers) respository.

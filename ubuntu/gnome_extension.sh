@@ -23,7 +23,6 @@ printf "\n\n\n[WARNING] Restart your computer or log out to finish to install po
 EXTENSIONS=(
   "Blur my Shell","https://extensions.gnome.org/extension/3193/blur-my-shell/"
   "Clipboard History","https://extensions.gnome.org/extension/4839/clipboard-history/"
-  "Freon","https://extensions.gnome.org/extension/841/freon/"
   "Vitals","https://extensions.gnome.org/extension/1460/vitals/"
 )
 

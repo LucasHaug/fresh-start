@@ -31,12 +31,12 @@ cd ../..
 rm master.zip
 rm -rf Dracula
 
+# Install tweaks
+sudo apt install gnome-tweaks
+
 # Get icons
 sudo add-apt-repository ppa:papirus/papirus
 sudo apt update
 sudo apt install papirus-icon-theme
 
 gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
-
-# Install tweaks
-sudo apt install gnome-tweaks

@@ -17,7 +17,7 @@ make compile
 make install
 make configure
 
-printf "\n\n\n[WARNING] Restart your computer or log out to finish to install pop shell, run 'make enable' and erase shell folder"
+printf "\n\n\n[WARNING] Restart your computer or log out to finish to install pop shell, run 'make enable' and erase shell folder\n\n"
 
 # Install the remaining extensions
 EXTENSIONS=(

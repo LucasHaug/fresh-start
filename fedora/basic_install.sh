@@ -41,6 +41,7 @@ chsh -s $(which fish)
 
 # Set initial config
 printf "set -l USER_PROGRAMS_FOLDER $USER_PROGRAMS_FOLDER\r\n\n" >> ~/.config/fish/config.fish
+printf "alias rmt='gio trash'\r\n\n" >> ~/.config/fish/config.fish
 
 # Install theme
 sudo sh -c "$(curl -fsSL https://starship.rs/install.sh)"

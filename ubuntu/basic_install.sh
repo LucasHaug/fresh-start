@@ -44,6 +44,7 @@ chsh -s $(which fish)
 mkdir -p ~/.config/fish
 touch ~/.config/fish/config.fish
 printf "set -l USER_PROGRAMS_FOLDER $USER_PROGRAMS_FOLDER\r\n\n" >> ~/.config/fish/config.fish
+printf "alias rmt='gio trash'\r\n\n" >> ~/.config/fish/config.fish
 
 # Install theme
 sudo apt install curl

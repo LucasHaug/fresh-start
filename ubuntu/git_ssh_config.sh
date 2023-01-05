@@ -4,21 +4,20 @@
 ## Configure the following variables
 #####################################
 
-GITHUB_EMAIL="email@email.com"
+GIT_EMAIL="email@email.com"
+GIT_KEY_PATH="$HOME/.ssh/github"
 
 #####################################
 ## Configuration end
 #####################################
 
 # Generate new key
-echo "[WARNING] Generate new key with name github"
-
-ssh-keygen -t ed25519 -C "$GITHUB_EMAIL"
+ssh-keygen -t ed25519 -C "$GIT_EMAIL" -f "$GIT_KEY_PATH" -N ""
 
 # Add key to ssh-agent
 eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/github
+ssh-add $GIT_KEY_PATH
 
 # Copy key
 sudo apt install xclip -y
-xclip -selection clipboard < ~/.ssh/github.pub
+xclip -selection clipboard < $GIT_KEY_PATH.pub

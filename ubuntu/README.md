@@ -7,6 +7,7 @@ This setup also uses the following gnome extensions:
 - [Blur my Shell](https://extensions.gnome.org/extension/3193/blur-my-shell/)
 - [Clipboard History](https://extensions.gnome.org/extension/4839/clipboard-history/)
 - [Vitals](https://extensions.gnome.org/extension/1460/vitals/)
+- [Aylur's Widgets](https://extensions.gnome.org/extension/5338/aylurs-widgets/)
 
 The wallpaper and user image where obtained in the [nordic-wallpapers](https://github.com/linuxdotexe/nordic-wallpapers) respository.
 

@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+WORKING_DIR=$(pwd)
+
 # Set locale
 locale  # check for UTF-8
 
@@ -26,6 +28,6 @@ sudo apt upgrade
 sudo apt install ros-humble-desktop-full -y
 
 # Setup
-# printf "bass source /opt/ros/humble/setup.bash\n\n" >> ~/.config/fish/config.fish
+printf "bass source /opt/ros/humble/setup.bash\n\n" >> ~/.config/fish/config.fish
 
-# Todo: add fish config
+cp "$WORKING_DIR"/.config/fish/conf.d/ros2.autosource.fish ~/.config/fish/conf.d/

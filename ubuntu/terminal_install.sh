@@ -9,8 +9,10 @@ git clone https://github.com/alacritty/alacritty.git
 
 cd alacritty
 
-sudo apt install cargo
+# Install rust
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
+# Build
 cargo build --release
 
 # Post install

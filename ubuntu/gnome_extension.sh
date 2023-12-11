@@ -12,9 +12,11 @@ sudo apt install git node-typescript make
 git clone https://github.com/pop-os/shell.git
 
 cd shell
+git checkout master_jammy
+
 make depcheck
 make compile
-make install
+make local-install
 make configure
 
 printf "\n\n\n[WARNING] Restart your computer or log out to finish to install pop shell, run 'make enable' and erase shell folder\n\n"

@@ -24,7 +24,7 @@ EXTENSIONS=(
   "Blur my Shell","https://extensions.gnome.org/extension/3193/blur-my-shell/"
   "Clipboard History","https://extensions.gnome.org/extension/4839/clipboard-history/"
   "Vitals","https://extensions.gnome.org/extension/1460/vitals/"
-  "Aylur's Widgets", "https://extensions.gnome.org/extension/5338/aylurs-widgets/"
+  "Aylur's Widgets","https://extensions.gnome.org/extension/5338/aylurs-widgets/"
 )
 
 echo "Install the remaing extensions from https://extensions.gnome.org/:"

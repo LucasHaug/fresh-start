@@ -58,10 +58,10 @@ printf "starship init fish | source\r\n\n" >> ~/.config/fish/config.fish
 cp "$WORKING_DIR"/.config/fish/theme.fish ~/.config/fish/
 printf "source ~/.config/fish/theme.fish\r\n\n" >> ~/.config/fish/config.fish
 
-# Install bass and omf
-yes | curl -L https://get.oh-my.fish | fish
+# Install bass and fisher
+curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
 
-fish -c 'omf install bass -y'
+fish -c 'fisher install edc/bass -y'
 
 # Config local time
 timedatectl set-local-rtc 1 --adjust-system-clock

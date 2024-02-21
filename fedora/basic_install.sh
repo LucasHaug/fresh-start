@@ -23,6 +23,7 @@ sudo dnf install gcc g++ cmake make git python3 python3-pip -y
 # Config git
 git config --global init.defaultBranch main
 git config --global core.autocrlf input
+git config --global pull.ff true
 git config --global user.name "$GITHUB_USER"
 git config --global user.email "$GITHUB_EMAIL"
 

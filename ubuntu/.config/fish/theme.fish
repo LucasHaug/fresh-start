@@ -1,7 +1,7 @@
 # Authored mostly by Lucas Schneider
 
 # Modify ls colors for readability
-set -x LS_COLORS $LS_COLORS ":ow=01;35"
+set -x LS_COLORS "$LS_COLORS:ow=01;35"
 
 # Fish syntax highlighting
 set -g fish_color_autosuggestion '555'  'brblack'
